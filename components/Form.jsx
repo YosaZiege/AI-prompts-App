@@ -1,7 +1,9 @@
 
 import Link from "next/link";
+import { Suspense } from "react";
 const Form = ({type,post , setPost , submiting, handleSubmit}) => {
   return (
+    <Suspense fallback{<div/> Loading </div>} >
     <section className='w-full max-w-full flex-start flex-col'>
      <h1 className="head_text text-left" ><span className="blue_gradient">{type} Post </span></h1>
      <p className="desc text-left max-w-md">{type} and share your favorite AI prompts</p>
@@ -48,6 +50,7 @@ const Form = ({type,post , setPost , submiting, handleSubmit}) => {
       
      </form>
     </section>
+    </Suspense>
   )
 }
 
