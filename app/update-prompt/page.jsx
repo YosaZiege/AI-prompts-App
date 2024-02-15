@@ -10,6 +10,7 @@ const UpdatePrompt = () => {
     const searchParams = useSearchParams();
     const promptId = searchParams.get('id');
     const [submiting , setSubmiting]= useState(false);
+
     useEffect(() => {
         const getPromptDetails = async () => {
           const response = await fetch(`/api/prompt/${promptId}`);
