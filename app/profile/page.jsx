@@ -47,6 +47,7 @@ const ProfilePage = () => {
     }
   };
   return (
+    
    <Profile
    name="My"
    desc="Welcome to your personalized profile page"
