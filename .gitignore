@@ -5,8 +5,14 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+<<<<<<< HEAD
 .env
 # testinggit branch -M main
+=======
+
+
+# testing
+>>>>>>> 7fbec77e21087c47029f4fbb40c5b21b0b5aef64
 /coverage
 
 # next.js

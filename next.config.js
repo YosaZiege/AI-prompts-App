@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ["mongoose"],
@@ -8,11 +7,9 @@ const nextConfig = {
     domains: ['lh3.googleusercontent.com'],
   },
   webpack(config) {
-    config.experiments = {
-      ...config.experiments,
-      topLevelAwait: true,
-    }
-    return config
+    config.experiments.topLevelAwait = true;
+    return config;
   }
-}
+};
 
+module.exports = nextConfig;
